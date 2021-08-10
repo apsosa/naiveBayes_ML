@@ -1,0 +1,24 @@
+Gaussian Naive Bayes (GaussianNB)
+P(xi/y)= 1/raiz(2pi omega^2 de y)*exp(-(xi-mu de y)^2/2omega^2 de y)
+clf.fit(X,Y)
+clf = classifier
+features=características => X
+labels=etiquetas         => Y 
+
+    ****Bayes****    
+Example:
+    Say there's a specific cancer that occurs in one of the population.
+        -P(c)= 0.01
+    An de test for this cancer.
+    Test: 
+        90% it is positive if you have C (sensitivity)   
+        90% it is negative if you don't have C (specitivity)
+    Question: without further symptoms you take the test, and the test comes back as positive.
+                What do you think is now the probability of having tha specific type of cancer?
+
+    HINT: Only matters the zone were the test is positive, so if we only look y that area
+        the real chance of get cancer with a positive test is 8%
+
+BAYES RULE
+
+prior probability * test evidence => posterior probability
